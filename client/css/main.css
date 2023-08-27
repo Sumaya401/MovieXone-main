@@ -1,0 +1,261 @@
+/* Main Page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Times New Roman";
+  background-image: url(/pics/bg.jpg);
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/pics/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering: pixelated;
+}
+.container .logo {
+  height: 36%;
+  position: absolute;
+  top: -75px;
+}
+.container .navbar {
+  margin-top: 1.6%;
+  margin-right: 2%;
+}
+.container .navbar li {
+  float: right;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .navbar li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.thumbnails {
+  display: inline-block;
+}
+.movielist {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.movielist img {
+  margin-top: 80px;
+  border-radius: 10px;
+  width: 20%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Recommendation */
+
+.container .recommendation {
+  display: inline-flex;
+  width: auto;
+}
+.recommendation .new_release .new_release_text {
+  background-color: rgba(5, 164, 254, 0.62);
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+.recommendation .new_release {
+  text-align: center;
+}
+.recommendation .new_release img {
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+.recommendation .top_rated .top_rated_text {
+  background-color: rgba(5, 164, 254, 0.62);
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+.recommendation .top_rated {
+  text-align: center;
+}
+.recommendation .top_rated img {
+  width: 50%;
+  border-radius: 10px;
+}
+.recommendation .your_favorite_genre .your_favorite_genre_text {
+  background-color: rgba(5, 164, 254, 0.62);
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 60px;
+  border-radius: 20px;
+}
+.recommendation .your_favorite_genre {
+  text-align: center;
+}
+.recommendation .your_favorite_genre img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Enter Email */
+
+.container .signupbtn {
+  background-color: rgba(255, 245, 0, 0.76);
+  margin-top: 1.525%;
+  float: right;
+  margin-right: 4%;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.9%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  text-align: center;
+  border-radius: 15px;
+  border-color: rgba(255, 245, 0, 0.76);
+  cursor: pointer;
+}
+.container .signupbtn a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.container h1 {
+  width: 650px;
+  padding-top: 15%;
+  font-size: 3rem;
+  text-align: center;
+  animation-name: animation_1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: aliceblue;
+}
+@keyframes animation_1 {
+  0% {
+    color: rgba(0, 52, 224, 0.836);
+  }
+  25% {
+    color: rgb(148, 14, 137);
+  }
+  50% {
+    color: rgb(5, 134, 151);
+  }
+  75% {
+    color: rgb(229, 233, 8);
+  }
+}
+h3 {
+  color: aliceblue;
+  font-size: 1.6rem;
+}
+h5 {
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+input {
+  border-color: rgba(240, 248, 255, 0.007);
+  width: 30%;
+  margin: auto;
+  padding: 0.9%;
+  font-size: 1.3rem;
+  outline: none;
+  opacity: 80%;
+  vertical-align: middle;
+}
+input:hover {
+  background-color: rgba(212, 196, 196, 0.8);
+}
+.sendbtn {
+  padding: 0.9%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: -0.2974%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-color: rgba(255, 0, 0, 0);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  vertical-align: middle;
+}
+.sendbtn:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.sendbtn a{
+  text-decoration: none;
+  color: aliceblue;
+}
+/* Enter Password */
+.container .context {
+  padding-top: 5%;
+}
+
+/* Regestration Page */
+
+.container .signinbtn {
+  background-color: rgba(255, 245, 0, 0.76);
+  margin-top: -8.4%;
+  float: right;
+  margin-right: 4%;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.9%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  text-align: center;
+  border-radius: 15px;
+  border-color: rgba(255, 245, 0, 0.76);
+  cursor: pointer;
+  top: 100px;
+}
+.container .signuppage {
+  background-color: rgba(255, 255, 255, 0.699);
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+  /* margin-left: 20%;
+  margin-right: 0%px; */
+  width: 50%;
+  padding: 20px;
+}
+.container .signuppage input {
+  margin: 0.5%;
+  background-color: rgba(60, 54, 66, 0.87);
+  width: 70%;
+}
+.container .signuppage .forgotpass {
+  color: rgba(254, 5, 5, 0.79);
+  font-size: 130%;
+  cursor: pointer;
+}
+.container .signuppage .button {
+  background-color: rgba(12, 93, 250, 0.8);
+  border-color: rgba(12, 91, 250, 0);
+  padding: 2%;
+  padding-left: 13%;
+  padding-right: 13%;
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+}
+.container .signuppage .button:hover {
+  background-color: rgb(0, 162, 255);
+}

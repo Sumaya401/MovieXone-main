@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: "Times New Roman";
+        background-image: url("{% static 'bg.jpg' %}");
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.7) 100%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          url("{% static 'bg.jpg' %}");
+        background-attachment: fixed;
+        background-size: cover;
+        image-rendering: pixelated;
+      }
+      .container .logo {
+        height: 36%;
+        position: absolute;
+        top: -75px;
+      }
+      .container .navbar {
+        margin-top: 1.6%;
+        margin-right: 2%;
+      }
+      .container .navbar li {
+        float: right;
+        margin: 15px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .container .navbar li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .thumbnails {
+        display: inline-block;
+      }
+      .movielist {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .movielist img {
+        margin-top: 80px;
+        border-radius: 10px;
+        width: 20%;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+    </style>
+    <title>MovieXone</title>
+  </head>
+  <body>
+    <div class="container">
+      {% load static %}
+      <a href="/html/main.html"
+        ><img class="logo" src="{% static 'logo.png' %}" alt="movie_zone_logo"
+      /></a>
+      <div class="navbar">
+        <ul>
+          <li><a href="http://localhost:8000/login/">Log Out</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">🔎 Search</a></li>
+          <li>
+            <a href="#">
+              <label for="">Genre</label>
+              <select id="genre">
+                <option value="horror">All</option>
+                <option value="horror">Horror</option>
+                <option value="romantic">Romantic</option>
+                <option value="thriller">Thriller</option>
+              </select>
+            </a>
+          </li>
+          <li><a href="/html/recommendation.html">Recommends</a></li>
+        </ul>
+      </div>
+      <div class="thumbnails">
+        <div class="movielist">
+          <img src="{% static 'thumbnail_1.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_2.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_3.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_4.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_5.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_2.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_4.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_5.jpeg' %}" alt="" />
+          <img src="{% static 'thumbnail_3.jpeg' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
